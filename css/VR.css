@@ -1,0 +1,142 @@
+/* Pagina */
+
+/* menu  */
+.home{
+    margin-right: 340px;
+    margin-left: 50px;
+}
+.home img{
+    margin-right: 23px;
+}
+.menu{
+    
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.menu ul{
+    background-color:  #02376b;
+    
+}
+.menu ul li{
+    display: inline;
+    position: relative;
+}
+.menu ul li a{
+    width: 170px;
+    color: #accbe0;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+}
+.menu ul li a:hover{
+    background-color: #025b97;
+}
+/* sub menu */
+.menu ul ul{
+    display: none;
+    left: 0;
+    position: absolute;
+    padding-left: 0px;
+}
+.menu ul li:hover ul{
+    display: block;
+}
+.menu ul ul{
+    width: 170px;
+}
+.menu ul ul li a{
+    display: block;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+section{
+    padding: 2.7rem 0;
+}
+.diferencias .container{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+}
+
+.diferencias .card img {
+    width: 100%;
+}
+.diferencias .card .titulo{
+    margin: 13px 0;
+    font-weight: 600;
+}
+.diferencias .card{
+    width: 30%;
+    cursor: pointer;
+    padding: 30px;
+    border-radius: 15px;
+    transition: 0.3s;
+    
+}
+.diferencias .card:hover{
+    box-shadow: 0px 10px 67px 8px; color: #accbe0;
+    
+}
+h3,p,h2{
+    color: #accbe0;
+   font-size: 19px;
+}
+.casa .container{
+    display: flex;
+    align-items: center;
+}
+.casa .casa-img{
+    width: 100%;
+    border-radius: 10px;
+}
+.casa .casa-text{
+    width: 50%;
+    padding-left: 90px;
+}
+.casa .casa-text h2{
+    font-size: 2.5em;
+}
+.casa .casa-text p{
+    margin: 20px 0;
+
+}
+figure,p{
+    text-align: center;
+}
+
+h3 .titulo{
+    align-items: center;
+}
+body{
+    background-color: #051b32;
+}
+h1{
+    color: #accbe0;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 50px;
+}
+
+footer{
+    background-color: #015fa9;
+    color: #accbe0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:9vh;
+    width: 100%;
+    margin-top: 20px;
+    text-decoration: none;
+    list-style-type: none;
+}
+.titulo{
+text-align: center;
+font-size: 25px;
+}
