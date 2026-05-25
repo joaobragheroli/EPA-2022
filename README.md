@@ -1,23 +1,43 @@
 # EPA 2022 — 5 Gerações da Informática
 
-## O que mudou
+Esse foi meu **primeiro projeto web**, desenvolvido para a **Etec de Portas Abertas (EPA) de 2022**.
 
-### Bugs corrigidos
-- `type="image/png"` corrigido no favicon (era `imagem/png`)
-- Imagens `.opdownload` removidas (arquivos corrompidos)
-- Arquivo `Int-graf..html` renomeado para `Int-graf.html`
-- Imagem `o jogo da imitação.webp` renomeada para `o-jogo-da-imitacao.webp` (sem espaços)
-- Calculadora: trocado `eval()` por `Function()` (mais seguro)
+O site conta a história da computação desde o ábaco até a Inteligência Artificial, passando pelas cinco gerações da informática: válvulas, transistores, microchips, computadores pessoais e a era moderna.
 
-### Design melhorado
-- CSS unificado em um único arquivo `estilo.css`
-- Layout com Flexbox (sem float manual)
-- Imagens responsivas (`max-width: 100%`)
-- Títulos com borda lateral azul
-- Cards com hover animado (página VR)
-- Grid de sistemas operacionais
+---
 
-### Responsivo para celular
-- Menu hambúrguer (☰) em telas pequenas
-- Colunas empilham verticalmente no mobile
-- Calculadora adapta tamanho dos botões
+## Sobre o projeto
+
+O site foi criado em **HTML e CSS puro**, sem frameworks ou bibliotecas externas. Tudo do zero.
+
+- 13 páginas HTML sobre a história da informática
+- Menu de navegação com dropdown feito apenas com CSS
+- Calculadora funcional com JavaScript
+- Página sobre Realidade Virtual, IA, Alan Turing, ENIAC e muito mais
+
+---
+
+## Equipe
+
+Projeto desenvolvido por **Cleyton, Eduardo, Gabriel Almeida e João Otávio**
+para apresentação na EPA 2022.
+
+---
+
+## Tecnologias utilizadas
+
+- HTML5
+- CSS3
+- JavaScript (vanilla)
+
+---
+
+## Como abrir
+
+1. Baixe ou clone o projeto
+2. Abra o arquivo `html/principal.html` no seu navegador
+3. Navegue pelo menu para explorar as gerações da informática
+
+---
+
+*Primeiro projeto — 2022*
