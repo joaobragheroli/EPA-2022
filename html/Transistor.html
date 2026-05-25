@@ -2,46 +2,44 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/geral.css">
-    <link rel="icon" type="imagem/png" href="../img/informatica-png.png" />
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="icon" type="image/png" href="../img/informatica-png.png">
     <title>Transistor</title>
 </head>
 <body>
     <header>
-        <nav class="menu">
-            <ul>
-                <li class="home"><a href="../html/principal.html"><img src="../img/home.png"width="30">HOME</a></li>
-                <li><a href="#">Primeira Geração <img src="../img/seta.png" width="10"></a>
+        <nav class="menu" id="menu-nav">
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="Abrir menu">&#9776;</button>
+            <ul id="menu-lista">
+                <li class="home"><a href="../html/principal.html"><img src="../img/home.png" alt="Home"> HOME</a></li>
+                <li><a href="#">Primeira Geração &#9660;</a>
                     <ul>
                         <li><a href="../html/AlanTuring.html">Alan Turing</a></li>
                         <li><a href="../html/Valvulas.html">Válvulas e ENIAC</a></li>
                         <li><a href="../html/calculadora.html">Calculadora</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Segunda Geração <img src="../img/seta.png" width="10"></a>
+                <li><a href="#">Segunda Geração &#9660;</a>
                     <ul>
-                        <li>
-                            <a href="../html/Transistor.html">Transistor</a>
-                        </li>
+                        <li><a href="../html/Transistor.html">Transistor</a></li>
                     </ul>
                 </li>
-                    <li><a href="#">Terceira Geração <img src="../img/seta.png" width="10"></a>
+                <li><a href="#">Terceira Geração &#9660;</a>
                     <ul>
                         <li><a href="../html/Microchip.html">Microchips</a></li>
                         <li><a href="../html/IBM-360.html">IBM's System/360</a></li>
                         <li><a href="../html/Int-txt.html">Interface de Texto</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Quarta Geração <img src="../img/seta.png" width="10"></a>
+                <li><a href="#">Quarta Geração &#9660;</a>
                     <ul>
                         <li><a href="../html/Sistemas-OP.html">Sistemas Operacionais</a></li>
                         <li><a href="../html/PCs.html">PC's</a></li>
-                        <li><a href="../html/Int-graf..html">Interface Gráfica</a></li>
+                        <li><a href="../html/Int-graf.html">Interface Gráfica</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Quinta Geração <img src="../img/seta.png" width="10"></a>
+                <li><a href="#">Quinta Geração &#9660;</a>
                     <ul>
                         <li><a href="../html/Vr.html">V.R.</a></li>
                         <li><a href="../html/IA.html">Inteligência Artificial</a></li>
@@ -50,26 +48,43 @@
             </ul>
         </nav>
     </header>
+
     <main>
-        <div class="P6">
-            <img src="../img/transistor.webp" alt="Transistor" height="260px">
-            <h1>Transistor</h1><br>
-                <p>° Segunda geração de computadores foi marcada pela substituição da válvula pelo transistor.</p> 
+        <div class="conteudo-bloco">
+            <div class="imagem-lateral">
+                <img src="../img/transistor.webp" alt="Transistor">
+            </div>
+            <div class="texto">
+                <h1>Transistor</h1>
+                <p>° A segunda geração de computadores foi marcada pela substituição da válvula pelo transistor.</p>
                 <p>° Eles eram muito menores do que as válvulas e tinham outras vantagens:</p>
-                <p>° Não exigiam tempo de pré-aquecimento, consumiam menos energia, geravam menos calor e eram mais rápidos e confiáveis.</p> 
+                <p>° Não exigiam tempo de pré-aquecimento, consumiam menos energia, geravam menos calor e eram mais rápidos e confiáveis.</p>
                 <p>° No final da década de 50, foram incorporados aos computadores.</p>
+            </div>
         </div>
-        <div class="P7">
-            <img src="../img/PDP-1.jpg" alt="PDP-1 Computador da Segunda Geração">
-            <br><br><br><h1>PDP-1</h1><br>
-            <p>° Um exemplo de computador de segunda geração é o PDP-1. </p> 
-            <p>° Um dispositivo desenvolvido em 1960 para a pesquisa científica.</p>
-            <p>° Onde o jogo de videogame da história foi jogado, o Spacewar!.</p>
+
+        <div class="conteudo-bloco invertido">
+            <div class="imagem-lateral">
+                <img src="../img/PDP-1.jpg" alt="PDP-1, computador da Segunda Geração">
+            </div>
+            <div class="texto">
+                <h1>PDP-1</h1>
+                <p>° Um exemplo de computador de segunda geração é o PDP-1.</p>
+                <p>° Um dispositivo desenvolvido em 1960 para a pesquisa científica.</p>
+                <p>° Foi onde o primeiro jogo de videogame da história foi jogado: o Spacewar!</p>
+            </div>
         </div>
     </main>
+
     <footer>
-        <p>Site criado por Cleyton, Eduardo, Gabriel Almeida e João Otávio para apresentação no 
-        <a href="https://www.cps.sp.gov.br/tag/etec-de-portas-abertas/" target="_blank"> EPA</a> &copy; 2022</p>
+        <p>Site criado por Cleyton, Eduardo, Gabriel Almeida e João Otávio para apresentação no
+        <a href="https://www.cps.sp.gov.br/tag/etec-de-portas-abertas/" target="_blank">EPA</a> &copy; 2022</p>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('menu-lista').classList.toggle('aberto');
+        }
+    </script>
 </body>
 </html>

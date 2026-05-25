@@ -2,46 +2,44 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/geral.css">
-    <link rel="icon" type="imagem/png" href="../img/informatica-png.png" />
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="icon" type="image/png" href="../img/informatica-png.png">
     <title>Inteligência Artificial</title>
 </head>
 <body>
     <header>
-        <nav class="menu">
-            <ul>
-                <li class="home"><a href="../html/principal.html"><img src="../img/home.png"width="30">HOME</a></li>
-                <li><a href="#">Primeira Geração <img src="../img/seta.png" width="10"></a>
+        <nav class="menu" id="menu-nav">
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="Abrir menu">&#9776;</button>
+            <ul id="menu-lista">
+                <li class="home"><a href="../html/principal.html"><img src="../img/home.png" alt="Home"> HOME</a></li>
+                <li><a href="#">Primeira Geração &#9660;</a>
                     <ul>
                         <li><a href="../html/AlanTuring.html">Alan Turing</a></li>
                         <li><a href="../html/Valvulas.html">Válvulas e ENIAC</a></li>
                         <li><a href="../html/calculadora.html">Calculadora</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Segunda Geração <img src="../img/seta.png" width="10"></a>
+                <li><a href="#">Segunda Geração &#9660;</a>
                     <ul>
-                        <li>
-                            <a href="../html/Transistor.html">Transistor</a>
-                        </li>
+                        <li><a href="../html/Transistor.html">Transistor</a></li>
                     </ul>
                 </li>
-                    <li><a href="#">Terceira Geração <img src="../img/seta.png" width="10"></a>
+                <li><a href="#">Terceira Geração &#9660;</a>
                     <ul>
                         <li><a href="../html/Microchip.html">Microchips</a></li>
                         <li><a href="../html/IBM-360.html">IBM's System/360</a></li>
                         <li><a href="../html/Int-txt.html">Interface de Texto</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Quarta Geração <img src="../img/seta.png" width="10"></a>
+                <li><a href="#">Quarta Geração &#9660;</a>
                     <ul>
                         <li><a href="../html/Sistemas-OP.html">Sistemas Operacionais</a></li>
                         <li><a href="../html/PCs.html">PC's</a></li>
-                        <li><a href="../html/Int-graf..html">Interface Gráfica</a></li>
+                        <li><a href="../html/Int-graf.html">Interface Gráfica</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Quinta Geração <img src="../img/seta.png" width="10"></a>
+                <li><a href="#">Quinta Geração &#9660;</a>
                     <ul>
                         <li><a href="../html/Vr.html">V.R.</a></li>
                         <li><a href="../html/IA.html">Inteligência Artificial</a></li>
@@ -50,27 +48,34 @@
             </ul>
         </nav>
     </header>
+
     <main>
-        <div class="P16">
-            <a href="https://www.hpe.com/br/pt/what-is/artificial-intelligence.html" target="_blank"><img src="../img/inteligencia-artificial-mudando-forma-comunicacao-native.jpg" alt="Inteligência Artificial"></a>
-            <h1>Inteligência Artificial</h1><br>
-                <p>
-                ° Inteligência artificial (IA) se refere amplamente a qualquer comportamento semelhante
-                ao do humano apresentado por uma máquina ou sistema.
-                </p>
-                <p>
-                ° Na forma mais básica da IA, os computadores são programados para “imitar” o comportamento humano usando dados
-                de exemplos anteriores de comportamento similar.
-                </p>
+        <div class="conteudo-bloco">
+            <div class="imagem-lateral">
+                <img src="../img/inteligencia-artificial-mudando-forma-comunicacao-native.jpg" alt="Inteligência Artificial">
+            </div>
+            <div class="texto">
+                <h1>Inteligência Artificial</h1>
+                <p>° Inteligência artificial (IA) se refere amplamente a qualquer comportamento semelhante ao do humano apresentado por uma máquina ou sistema.</p>
+                <p>° Na forma mais básica da IA, os computadores são programados para "imitar" o comportamento humano usando dados de exemplos anteriores.</p>
                 <p>° Eles podem variar desde reconhecer diferenças entre um gato e um pássaro até realizar atividades complexas em uma fábrica.</p>
+            </div>
         </div>
-        <div class="P17">
-        <center><img src="../img/IAvsIH-destaque.jpg" alt="Inteligência Artificial" width="50%"></center>
+
+        <div class="imagem-centralizada">
+            <img src="../img/IAvsIH-destaque.jpg" alt="IA vs Inteligência Humana">
         </div>
     </main>
+
     <footer>
-        <p>Site criado por Cleyton, Eduardo, Gabriel Almeida e João Otávio para apresentação no 
-        <a href="https://www.cps.sp.gov.br/tag/etec-de-portas-abertas/" target="_blank"> EPA</a> &copy; 2022</p>
+        <p>Site criado por Cleyton, Eduardo, Gabriel Almeida e João Otávio para apresentação no
+        <a href="https://www.cps.sp.gov.br/tag/etec-de-portas-abertas/" target="_blank">EPA</a> &copy; 2022</p>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('menu-lista').classList.toggle('aberto');
+        }
+    </script>
 </body>
 </html>

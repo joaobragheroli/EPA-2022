@@ -2,46 +2,44 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/geral.css">
-    <link rel="icon" type="imagem/png" href="../img/informatica-png.png" />
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="icon" type="image/png" href="../img/informatica-png.png">
     <title>PC's</title>
 </head>
 <body>
     <header>
-        <nav class="menu">
-            <ul>
-                <li class="home"><a href="../html/principal.html"><img src="../img/home.png"width="30">HOME</a></li>
-                <li><a href="#">Primeira Geração <img src="../img/seta.png" width="10"></a>
+        <nav class="menu" id="menu-nav">
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="Abrir menu">&#9776;</button>
+            <ul id="menu-lista">
+                <li class="home"><a href="../html/principal.html"><img src="../img/home.png" alt="Home"> HOME</a></li>
+                <li><a href="#">Primeira Geração &#9660;</a>
                     <ul>
                         <li><a href="../html/AlanTuring.html">Alan Turing</a></li>
                         <li><a href="../html/Valvulas.html">Válvulas e ENIAC</a></li>
                         <li><a href="../html/calculadora.html">Calculadora</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Segunda Geração <img src="../img/seta.png" width="10"></a>
+                <li><a href="#">Segunda Geração &#9660;</a>
                     <ul>
-                        <li>
-                            <a href="../html/Transistor.html">Transistor</a>
-                        </li>
+                        <li><a href="../html/Transistor.html">Transistor</a></li>
                     </ul>
                 </li>
-                    <li><a href="#">Terceira Geração <img src="../img/seta.png" width="10"></a>
+                <li><a href="#">Terceira Geração &#9660;</a>
                     <ul>
                         <li><a href="../html/Microchip.html">Microchips</a></li>
                         <li><a href="../html/IBM-360.html">IBM's System/360</a></li>
                         <li><a href="../html/Int-txt.html">Interface de Texto</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Quarta Geração <img src="../img/seta.png" width="10"></a>
+                <li><a href="#">Quarta Geração &#9660;</a>
                     <ul>
                         <li><a href="../html/Sistemas-OP.html">Sistemas Operacionais</a></li>
                         <li><a href="../html/PCs.html">PC's</a></li>
-                        <li><a href="../html/Int-graf..html">Interface Gráfica</a></li>
+                        <li><a href="../html/Int-graf.html">Interface Gráfica</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Quinta Geração <img src="../img/seta.png" width="10"></a>
+                <li><a href="#">Quinta Geração &#9660;</a>
                     <ul>
                         <li><a href="../html/Vr.html">V.R.</a></li>
                         <li><a href="../html/IA.html">Inteligência Artificial</a></li>
@@ -50,25 +48,42 @@
             </ul>
         </nav>
     </header>
+
     <main>
-        <div class="P12">
-            <img src="../img/pc.jpg" alt="PC">
-            <h1>PC's</h1><br>
-                <p>° Com o desenvolvimento da tecnologia, os computadores diminuem de tamanho, aumentam a
-                velocidade e capacidade de processamento.</p>
+        <div class="conteudo-bloco">
+            <div class="imagem-lateral">
+                <img src="../img/pc.jpg" alt="Computador pessoal">
+            </div>
+            <div class="texto">
+                <h1>PC's</h1>
+                <p>° Com o desenvolvimento da tecnologia, os computadores diminuem de tamanho e aumentam a velocidade e capacidade de processamento.</p>
                 <p>° São incluídos os microprocessadores com gasto cada vez menor de energia.</p>
                 <p>° Nesse período, a partir da década de 90, há uma grande expansão dos computadores pessoais.</p>
+            </div>
         </div>
-        <div class="P13">
-                <p>° A quarta geração de computadores foi caracterizada também por incluir dois tipos de memória:</p>
-                <p>° Memória RAM : armazena os dados do programa temporariamente, enquanto o equipamento está ligado.</p>
-                <p>° Memória ROM : armazena os dados do programa permanentemente.</p>
-                <center><img src="../img/memorias.webp" alt="Memórias RAM e ROM"></center>
+
+        <div class="conteudo-bloco invertido">
+            <div class="imagem-lateral">
+                <img src="../img/memorias.webp" alt="Memórias RAM e ROM">
+            </div>
+            <div class="texto">
+                <h2>Tipos de Memória</h2>
+                <p>° A quarta geração de computadores também foi caracterizada por incluir dois tipos de memória:</p>
+                <p>° <strong>Memória RAM:</strong> armazena os dados do programa temporariamente, enquanto o equipamento está ligado.</p>
+                <p>° <strong>Memória ROM:</strong> armazena os dados do programa permanentemente.</p>
+            </div>
         </div>
     </main>
+
     <footer>
-        <p>Site criado por Cleyton, Eduardo, Gabriel Almeida e João Otávio para apresentação no 
-        <a href="https://www.cps.sp.gov.br/tag/etec-de-portas-abertas/" target="_blank"> EPA</a> &copy; 2022</p>
+        <p>Site criado por Cleyton, Eduardo, Gabriel Almeida e João Otávio para apresentação no
+        <a href="https://www.cps.sp.gov.br/tag/etec-de-portas-abertas/" target="_blank">EPA</a> &copy; 2022</p>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('menu-lista').classList.toggle('aberto');
+        }
+    </script>
 </body>
 </html>

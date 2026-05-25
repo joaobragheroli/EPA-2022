@@ -2,46 +2,44 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/geral.css">
-    <link rel="icon" type="imagem/png" href="../img/informatica-png.png" />
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="icon" type="image/png" href="../img/informatica-png.png">
     <title>Alan Turing</title>
 </head>
 <body>
     <header>
-        <nav class="menu">
-            <ul>
-                <li class="home"><a href="../html/principal.html"><img src="../img/home.png"width="30">HOME</a></li>
-                <li><a href="#">Primeira Geração <img src="../img/seta.png" width="10"></a>
+        <nav class="menu" id="menu-nav">
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="Abrir menu">&#9776;</button>
+            <ul id="menu-lista">
+                <li class="home"><a href="../html/principal.html"><img src="../img/home.png" alt="Home"> HOME</a></li>
+                <li><a href="#">Primeira Geração &#9660;</a>
                     <ul>
                         <li><a href="../html/AlanTuring.html">Alan Turing</a></li>
                         <li><a href="../html/Valvulas.html">Válvulas e ENIAC</a></li>
                         <li><a href="../html/calculadora.html">Calculadora</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Segunda Geração <img src="../img/seta.png" width="10"></a>
+                <li><a href="#">Segunda Geração &#9660;</a>
                     <ul>
-                        <li>
-                            <a href="../html/Transistor.html">Transistor</a>
-                        </li>
+                        <li><a href="../html/Transistor.html">Transistor</a></li>
                     </ul>
                 </li>
-                    <li><a href="#">Terceira Geração <img src="../img/seta.png" width="10"></a>
+                <li><a href="#">Terceira Geração &#9660;</a>
                     <ul>
                         <li><a href="../html/Microchip.html">Microchips</a></li>
                         <li><a href="../html/IBM-360.html">IBM's System/360</a></li>
                         <li><a href="../html/Int-txt.html">Interface de Texto</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Quarta Geração <img src="../img/seta.png" width="10"></a>
+                <li><a href="#">Quarta Geração &#9660;</a>
                     <ul>
                         <li><a href="../html/Sistemas-OP.html">Sistemas Operacionais</a></li>
                         <li><a href="../html/PCs.html">PC's</a></li>
-                        <li><a href="../html/Int-graf..html">Interface Gráfica</a></li>
+                        <li><a href="../html/Int-graf.html">Interface Gráfica</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Quinta Geração <img src="../img/seta.png" width="10"></a>
+                <li><a href="#">Quinta Geração &#9660;</a>
                     <ul>
                         <li><a href="../html/Vr.html">V.R.</a></li>
                         <li><a href="../html/IA.html">Inteligência Artificial</a></li>
@@ -50,27 +48,44 @@
             </ul>
         </nav>
     </header>
+
     <main>
-        <div class="P1">
-            <img src="../img/Alan_Turing.jpg" alt="Alan Turin">
-            <h1>Alan Turin</h1><br>
+        <div class="conteudo-bloco">
+            <div class="imagem-lateral">
+                <img src="../img/Alan_Turing.jpg" alt="Foto de Alan Turing">
+            </div>
+            <div class="texto">
+                <h1>Alan Turing</h1>
                 <p>° Foi um matemático, lógico, criptoanalista e cientista da computação britânico.</p>
-                <p>° A máquina de Turing, desempenhando um papel importante na criação do computador moderno.</p>
-                <p>° Durante a Segunda Guerra Mundial, Turing trabalhou para a inteligência britânica, 
-                num centro especializado em quebra de códigos.</p>
-            
+                <p>° Criou a Máquina de Turing, que desempenhou um papel fundamental na criação do computador moderno.</p>
+                <p>° Durante a Segunda Guerra Mundial, Turing trabalhou para a inteligência britânica, em um centro especializado em quebra de códigos.</p>
+            </div>
         </div>
-        <div class="P2">
-            <img src="../img/Maquina-de-turing.jpg" alt="Maquina de turing">
-            <br><br><br><br><br><br><br><br><br><br><br><p>Máquina de Turing</p>
+
+        <div class="conteudo-bloco invertido">
+            <div class="imagem-lateral">
+                <img src="../img/Maquina-de-turing.jpg" alt="Máquina de Turing">
+            </div>
+            <div class="texto">
+                <h2>A Máquina de Turing</h2>
+                <p>A Máquina de Turing é um modelo matemático abstrato que serviu de base para o desenvolvimento dos computadores modernos. Ela foi capaz de simular qualquer algoritmo computacional.</p>
+            </div>
         </div>
-        <div class="A1">
-        <center><img src="../img/o jogo da imitação.webp" alt="o jogo da imitação"></center>
+
+        <div class="imagem-centralizada">
+            <img src="../img/o-jogo-da-imitacao.webp" alt="O Jogo da Imitação — filme baseado na vida de Alan Turing">
         </div>
     </main>
+
     <footer>
-        <p>Site criado por Cleyton, Eduardo, Gabriel Almeida e João Otávio para apresentação no 
-        <a href="https://www.cps.sp.gov.br/tag/etec-de-portas-abertas/" target="_blank"> EPA</a> &copy; 2022</p>
+        <p>Site criado por Cleyton, Eduardo, Gabriel Almeida e João Otávio para apresentação no
+        <a href="https://www.cps.sp.gov.br/tag/etec-de-portas-abertas/" target="_blank">EPA</a> &copy; 2022</p>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('menu-lista').classList.toggle('aberto');
+        }
+    </script>
 </body>
 </html>

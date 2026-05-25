@@ -3,43 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/calculadora.css">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="icon" type="image/png" href="../img/informatica-png.png">
     <title>Calculadora</title>
 </head>
 <body>
     <header>
-        <nav class="menu">
-            <ul>
-                <li class="home"><a href="../html/principal.html"><img src="../img/home.png"width="30">HOME</a></li>
-                <li><a href="#">Primeira Geração <img src="../img/seta.png" width="10"></a>
+        <nav class="menu" id="menu-nav">
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="Abrir menu">&#9776;</button>
+            <ul id="menu-lista">
+                <li class="home"><a href="../html/principal.html"><img src="../img/home.png" alt="Home"> HOME</a></li>
+                <li><a href="#">Primeira Geração &#9660;</a>
                     <ul>
                         <li><a href="../html/AlanTuring.html">Alan Turing</a></li>
                         <li><a href="../html/Valvulas.html">Válvulas e ENIAC</a></li>
                         <li><a href="../html/calculadora.html">Calculadora</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Segunda Geração <img src="../img/seta.png" width="10"></a>
+                <li><a href="#">Segunda Geração &#9660;</a>
                     <ul>
-                        <li>
-                            <a href="../html/Transistor.html">Transistor</a>
-                        </li>
+                        <li><a href="../html/Transistor.html">Transistor</a></li>
                     </ul>
                 </li>
-                    <li><a href="#">Terceira Geração <img src="../img/seta.png" width="10"></a>
+                <li><a href="#">Terceira Geração &#9660;</a>
                     <ul>
                         <li><a href="../html/Microchip.html">Microchips</a></li>
                         <li><a href="../html/IBM-360.html">IBM's System/360</a></li>
                         <li><a href="../html/Int-txt.html">Interface de Texto</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Quarta Geração <img src="../img/seta.png" width="10"></a>
+                <li><a href="#">Quarta Geração &#9660;</a>
                     <ul>
                         <li><a href="../html/Sistemas-OP.html">Sistemas Operacionais</a></li>
                         <li><a href="../html/PCs.html">PC's</a></li>
-                        <li><a href="../html/Int-graf..html">Interface Gráfica</a></li>
+                        <li><a href="../html/Int-graf.html">Interface Gráfica</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Quinta Geração <img src="../img/seta.png" width="10"></a>
+                <li><a href="#">Quinta Geração &#9660;</a>
                     <ul>
                         <li><a href="../html/Vr.html">V.R.</a></li>
                         <li><a href="../html/IA.html">Inteligência Artificial</a></li>
@@ -48,81 +48,76 @@
             </ul>
         </nav>
     </header>
-    <div class="fundo">
-        <center>
-            <h1>Calculadora</h1><br>
-        </center>
-        <p>Criado pelos chineses no século 6 a.C, esse instrumento dispunha de fios paralelos e arruelas deslizantes, capazes de realizar contas de adição e subtração. Essa invenção revolucionou a matemática, pois acabou sendo o principal mecanismo de cálculo durante os 24 séculos seguintes
-        </p>
-        
-        <div class="calculadora">
-            <center>
-                <h2>Calculadora</h2>
-            </center>
-            <p id="resultado"></p>
-            <table>
-                <tr>
-                    <td><button class="botao" onclick="clean()">C</button></td>
-                    <td><button class="botao" onclick="back()"><-</button></td>
-                    <td><button class="botao" onclick="insert('/')">/</button></td>
-                    <td><button class="botao" onclick="insert('*')">X</button></td>
-                </tr>
-                <tr>
-                    <td><button class="botao" onclick="insert('7')">7</button></td>
-                    <td><button class="botao" onclick="insert('8')">8</button></td>
-                    <td><button class="botao" onclick="insert('9')">9</button></td>
-                    <td><button class="botao" onclick="insert('-')">-</button></td>
-                </tr>
-                <tr>
-                    <td><button class="botao" onclick="insert('4')">4</button></td>
-                    <td><button class="botao" onclick="insert('5')">5</button></td>
-                    <td><button class="botao" onclick="insert('6')">6</button></td>
-                    <td><button class="botao" onclick="insert('+')">+</button></td>
-                </tr>
-                <tr>
-                    <td><button class="botao" onclick="insert('1')">1</button></td>
-                    <td><button class="botao" onclick="insert('2')">2</button></td>
-                    <td><button class="botao" onclick="insert('3')">3</button></td>
-                    <td rowspan="2"><button class="botao" style="height: 106px;" onclick="calcular()">=</button></td>
-                </tr>
-                <tr>
-                    <td colspan="2"><button class="botao" style="width: 106px;" onclick="insert('0')">0</button></td>
-                    <td><button class="botao" onclick="insert('.')">.</button></td>
-                </tr>
-            </table>
+
+    <main>
+        <h1>Calculadora</h1>
+
+        <div class="calculadora-pagina">
+            <div class="calculadora-info">
+                <p>Criada pelos chineses no século 6 a.C., esse instrumento dispunha de fios paralelos e arruelas deslizantes, capazes de realizar contas de adição e subtração.</p>
+                <p>Essa invenção revolucionou a matemática, pois acabou sendo o principal mecanismo de cálculo durante os 24 séculos seguintes.</p>
+            </div>
+
+            <div class="calc-widget">
+                <p id="resultado"></p>
+                <div class="calc-grid">
+                    <button class="botao" onclick="clean()">C</button>
+                    <button class="botao" onclick="back()">&#8592;</button>
+                    <button class="botao" onclick="inserir('/')">/</button>
+                    <button class="botao" onclick="inserir('*')">×</button>
+
+                    <button class="botao" onclick="inserir('7')">7</button>
+                    <button class="botao" onclick="inserir('8')">8</button>
+                    <button class="botao" onclick="inserir('9')">9</button>
+                    <button class="botao" onclick="inserir('-')">−</button>
+
+                    <button class="botao" onclick="inserir('4')">4</button>
+                    <button class="botao" onclick="inserir('5')">5</button>
+                    <button class="botao" onclick="inserir('6')">6</button>
+                    <button class="botao" onclick="inserir('+')">+</button>
+
+                    <button class="botao" onclick="inserir('1')">1</button>
+                    <button class="botao" onclick="inserir('2')">2</button>
+                    <button class="botao" onclick="inserir('3')">3</button>
+                    <button class="botao igual" onclick="calcular()">=</button>
+
+                    <button class="botao zero" onclick="inserir('0')">0</button>
+                    <button class="botao" onclick="inserir('.')">.</button>
+                </div>
+            </div>
         </div>
-    </div>
+    </main>
+
+    <footer>
+        <p>Site criado por Cleyton, Eduardo, Gabriel Almeida e João Otávio para apresentação no
+        <a href="https://www.cps.sp.gov.br/tag/etec-de-portas-abertas/" target="_blank">EPA</a> &copy; 2022</p>
+    </footer>
+
     <script>
-        function insert(num)
-        {
-            var numero = document.getElementById('resultado').innerHTML;
-            document.getElementById('resultado').innerHTML = numero + num;
+        var display = document.getElementById('resultado');
+
+        function inserir(valor) {
+            display.textContent += valor;
         }
-        function clean()
-        {
-            document.getElementById('resultado').innerHTML = "";
+        function clean() {
+            display.textContent = '';
         }
-        function back()
-        {
-            var resultado = document.getElementById('resultado').innerHTML;
-            document.getElementById('resultado').innerHTML = resultado.substring(0, resultado.length -1);
+        function back() {
+            display.textContent = display.textContent.slice(0, -1);
         }
-        function calcular()
-        {
-            var resultado = document.getElementById('resultado').innerHTML;
-            if(resultado)
-            {
-                document.getElementById('resultado').innerHTML = eval(resultado);
+        function calcular() {
+            var expr = display.textContent;
+            if (!expr) { display.textContent = 'Nada...'; return; }
+            try {
+                display.textContent = Function('"use strict"; return (' + expr + ')')();
+            } catch(e) {
+                display.textContent = 'Erro';
             }
-            else
-            {
-                document.getElementById('resultado').innerHTML = "Nada..."
-            }
+        }
+
+        function toggleMenu() {
+            document.getElementById('menu-lista').classList.toggle('aberto');
         }
     </script>
-    <footer>
-        <p>Site criado por Cleyton, Eduardo, Gabriel Almeida e João Otávio para apresentação no 
-        <a href="https://www.cps.sp.gov.br/tag/etec-de-portas-abertas/" target="_blank"> EPA</a> &copy; 2022</p>
-    </footer>
 </body>
 </html>

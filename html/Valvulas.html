@@ -2,46 +2,44 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/geral.css">
-    <link rel="icon" type="imagem/png" href="../img/informatica-png.png" />
-    <title>Válvulas</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="icon" type="image/png" href="../img/informatica-png.png">
+    <title>Válvulas e ENIAC</title>
 </head>
 <body>
     <header>
-        <nav class="menu">
-            <ul>
-                <li class="home"><a href="../html/principal.html"><img src="../img/home.png"width="30">HOME</a></li>
-                <li><a href="#">Primeira Geração <img src="../img/seta.png" width="10"></a>
+        <nav class="menu" id="menu-nav">
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="Abrir menu">&#9776;</button>
+            <ul id="menu-lista">
+                <li class="home"><a href="../html/principal.html"><img src="../img/home.png" alt="Home"> HOME</a></li>
+                <li><a href="#">Primeira Geração &#9660;</a>
                     <ul>
                         <li><a href="../html/AlanTuring.html">Alan Turing</a></li>
                         <li><a href="../html/Valvulas.html">Válvulas e ENIAC</a></li>
                         <li><a href="../html/calculadora.html">Calculadora</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Segunda Geração <img src="../img/seta.png" width="10"></a>
+                <li><a href="#">Segunda Geração &#9660;</a>
                     <ul>
-                        <li>
-                            <a href="../html/Transistor.html">Transistor</a>
-                        </li>
+                        <li><a href="../html/Transistor.html">Transistor</a></li>
                     </ul>
                 </li>
-                    <li><a href="#">Terceira Geração <img src="../img/seta.png" width="10"></a>
+                <li><a href="#">Terceira Geração &#9660;</a>
                     <ul>
                         <li><a href="../html/Microchip.html">Microchips</a></li>
                         <li><a href="../html/IBM-360.html">IBM's System/360</a></li>
                         <li><a href="../html/Int-txt.html">Interface de Texto</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Quarta Geração <img src="../img/seta.png" width="10"></a>
+                <li><a href="#">Quarta Geração &#9660;</a>
                     <ul>
                         <li><a href="../html/Sistemas-OP.html">Sistemas Operacionais</a></li>
                         <li><a href="../html/PCs.html">PC's</a></li>
-                        <li><a href="../html/Int-graf..html">Interface Gráfica</a></li>
+                        <li><a href="../html/Int-graf.html">Interface Gráfica</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Quinta Geração <img src="../img/seta.png" width="10"></a>
+                <li><a href="#">Quinta Geração &#9660;</a>
                     <ul>
                         <li><a href="../html/Vr.html">V.R.</a></li>
                         <li><a href="../html/IA.html">Inteligência Artificial</a></li>
@@ -50,31 +48,44 @@
             </ul>
         </nav>
     </header>
+
     <main>
-        <div class="P3">
-            <img src="../img/valvulas1.png.opdownload" alt="Valvulas">
-            <h1>Válvulas</h1><br>
-                <p>° O funcionamento dos primeiros computadores era conseguido através de válvulas termiônicas (ou, tubos de vácuo).</p>
-                <p>° Uma válvula, ou tubo de vácuo, é um componente eletrônico em forma de lâmpada, responsável por amplificar ou
-                modificar um sinal elétrico.</p> 
+        <div class="conteudo-bloco">
+            <div class="imagem-lateral">
+                <img src="../img/valvulas2.jpg" alt="Válvulas termiônicas">
+            </div>
+            <div class="texto">
+                <h1>Válvulas Termiônicas</h1>
+                <p>° O funcionamento dos primeiros computadores era conseguido através de válvulas termiônicas (ou tubos de vácuo).</p>
+                <p>° Uma válvula, ou tubo de vácuo, é um componente eletrônico em forma de lâmpada, responsável por amplificar ou modificar um sinal elétrico.</p>
                 <p>° Este dispositivo foi fundamental para o desenvolvimento das telecomunicações e da computação.</p>
+            </div>
         </div>
-        <div class="P4">
-            <center><img src="../img/valvulas2.jpg" alt="Valvulas"></center>
-        </div>
-        <div class="P5">
-            <img src="../img/Eniac.jpg" alt="ENIAC" width="900px">
-            <h1>ENIAC</h1><br>
-            <p>° Foi o primeiro computador digital eletrônico de grande escala.</p> 
-            <p>° Desenvolvido apedido do exército dos EUA para o laboratório de pesquisa balística.</p>
-            <p>° O ENIAC era uma máquina de 30 toneladas e ocupava uma área de 180m².</p>
-            <p>° Sua produção custou aproximadamente US$500mil na época.</p>
-            <p>° Possuia 70 mil resistores e 18 mil válvulas.</p>
+
+        <div class="conteudo-bloco invertido">
+            <div class="imagem-lateral">
+                <img src="../img/Eniac.jpg" alt="O computador ENIAC">
+            </div>
+            <div class="texto">
+                <h1>ENIAC</h1>
+                <p>° Foi o primeiro computador digital eletrônico de grande escala.</p>
+                <p>° Desenvolvido a pedido do exército dos EUA para o laboratório de pesquisa balística.</p>
+                <p>° O ENIAC era uma máquina de 30 toneladas e ocupava uma área de 180 m².</p>
+                <p>° Sua produção custou aproximadamente US$ 500 mil na época.</p>
+                <p>° Possuía 70 mil resistores e 18 mil válvulas.</p>
+            </div>
         </div>
     </main>
+
     <footer>
-        <p>Site criado por Cleyton, Eduardo, Gabriel Almeida e João Otávio para apresentação no 
-        <a href="https://www.cps.sp.gov.br/tag/etec-de-portas-abertas/" target="_blank"> EPA</a> &copy; 2022</p>
+        <p>Site criado por Cleyton, Eduardo, Gabriel Almeida e João Otávio para apresentação no
+        <a href="https://www.cps.sp.gov.br/tag/etec-de-portas-abertas/" target="_blank">EPA</a> &copy; 2022</p>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('menu-lista').classList.toggle('aberto');
+        }
+    </script>
 </body>
 </html>
