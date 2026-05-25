@@ -1,4 +1,4 @@
-# EPA 2022 — 5 Gerações da Informática (Versão Melhorada)
+# EPA 2022 — 5 Gerações da Informática
 
 ## O que mudou
 
